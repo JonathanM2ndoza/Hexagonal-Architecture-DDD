@@ -37,9 +37,9 @@ Note: The words Application, Domain and Infrastructure do not come from the orig
 
 - The domain layer represents the inside of the application and provides ports to interact with application use cases.
 
-- This is the part that we want to isolate from both left and right sides. It contains all the code that concerns and implements business logic.
+- This is the part that we want to isolate from both left and right sides. It contains all the code that concerns and implements business logic (use cases).
  
-- Because domain objects have no dependencies on other layers of the application, changes in other layers don’t affect them
+- Because domain objects have no dependencies on other layers of the application, changes in other layers don’t affect them.
 
 ### Application Layer
 
