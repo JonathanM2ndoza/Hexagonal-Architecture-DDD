@@ -31,8 +31,6 @@ Note: The words Application, Domain and Infrastructure do not come from the orig
 
 ![Screenshot](prtsc/Hexa-Arch-DDD-2.png)
 
-![Screenshot](prtsc/Hexa-Arch-DDD-2.1.png)
-
 **Note: A port in Java is an interface. An adapter is one implementation of that interface.**
 
 ### Domain Layer, in the center
