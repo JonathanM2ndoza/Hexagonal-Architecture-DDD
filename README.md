@@ -43,6 +43,7 @@ Note: The words Application, Domain and Infrastructure do not come from the orig
 
 ### Application Layer
 
+- 
 
 
 
