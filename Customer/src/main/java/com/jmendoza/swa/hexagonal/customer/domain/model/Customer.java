@@ -14,8 +14,6 @@ import javax.validation.constraints.Size;
 public class Customer {
     private String id;
     @NonNull
-    private String idCard;
-    @NonNull
     @Size(min = 3, max = 20)
     private String firstName;
     @NonNull
@@ -24,4 +22,6 @@ public class Customer {
     @NonNull
     @Email
     private String email;
+    @NonNull
+    private String password;
 }
