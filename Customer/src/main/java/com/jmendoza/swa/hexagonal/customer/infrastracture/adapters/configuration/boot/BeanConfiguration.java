@@ -11,6 +11,6 @@ public class BeanConfiguration {
 
     @Bean
     CreateCustomerService createCustomerService(CustomerRepositoryAdapter customerRepositoryAdapter, EncryptAdapter encryptAdapter) {
-        return new CreateCustomerService(customerRepositoryAdapter, encryptAdapter);
+        return new CreateCustomerService(customerRepositoryAdapter, encryptAdapter, customerRepositoryAdapter);
     }
 }

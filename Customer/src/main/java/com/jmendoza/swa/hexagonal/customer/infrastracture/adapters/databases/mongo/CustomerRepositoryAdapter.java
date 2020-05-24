@@ -2,11 +2,12 @@ package com.jmendoza.swa.hexagonal.customer.infrastracture.adapters.databases.mo
 
 import com.jmendoza.swa.hexagonal.customer.domain.model.Customer;
 import com.jmendoza.swa.hexagonal.customer.domain.ports.outbound.CreateCustomerPort;
+import com.jmendoza.swa.hexagonal.customer.domain.ports.outbound.ExistsCustomerPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CustomerRepositoryAdapter implements CreateCustomerPort {
+public class CustomerRepositoryAdapter implements CreateCustomerPort, ExistsCustomerPort {
 
     @Autowired
     CustomerRepository customerRepository;
@@ -14,5 +15,10 @@ public class CustomerRepositoryAdapter implements CreateCustomerPort {
     @Override
     public void createCustomer(Customer customer) {
         customerRepository.save(customer);
+    }
+
+    @Override
+    public boolean existsByEmail(String email) {
+        return customerRepository.existsByEmail(email);
     }
 }

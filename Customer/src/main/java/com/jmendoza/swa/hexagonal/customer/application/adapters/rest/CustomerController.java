@@ -3,6 +3,7 @@ package com.jmendoza.swa.hexagonal.customer.application.adapters.rest;
 import com.jmendoza.swa.hexagonal.customer.application.adapters.rest.response.CreateUserResponse;
 import com.jmendoza.swa.hexagonal.customer.domain.model.Customer;
 import com.jmendoza.swa.hexagonal.customer.domain.ports.inbound.CreateCustomerUseCase;
+import com.jmendoza.swa.hexagonal.customer.infrastracture.adapters.configuration.exception.GlobalException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -22,7 +23,7 @@ public class CustomerController {
     }
 
     @PostMapping("/customer")
-    public ResponseEntity createUser(@Valid @RequestBody Customer customer) {
+    public ResponseEntity createUser(@Valid @RequestBody Customer customer) throws GlobalException {
         createCustomerUseCase.createCustomer(customer);
         return ResponseEntity.ok().body(CreateUserResponse.builder().id(customer.getId()).build());
     }
