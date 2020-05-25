@@ -1,4 +1,4 @@
-package com.jmendoza.swa.hexagonal.customer.infrastracture.adapters.databases.mongo;
+package com.jmendoza.swa.hexagonal.customer.infrastracture.databases.mongo;
 
 import com.jmendoza.swa.hexagonal.customer.domain.model.Customer;
 import org.springframework.data.mongodb.repository.MongoRepository;

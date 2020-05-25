@@ -1,4 +1,4 @@
-package com.jmendoza.swa.hexagonal.customer.application.adapters.rest.response;
+package com.jmendoza.swa.hexagonal.customer.application.rest.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Builder;

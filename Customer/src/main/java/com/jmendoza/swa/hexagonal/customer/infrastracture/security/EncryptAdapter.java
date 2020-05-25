@@ -1,4 +1,4 @@
-package com.jmendoza.swa.hexagonal.customer.infrastracture.adapters.security;
+package com.jmendoza.swa.hexagonal.customer.infrastracture.security;
 
 import com.jmendoza.swa.hexagonal.customer.domain.ports.outbound.EncryptPasswordPort;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

@@ -1,6 +1,6 @@
-package com.jmendoza.swa.hexagonal.customer.application.adapters.rest;
+package com.jmendoza.swa.hexagonal.customer.application.rest;
 
-import com.jmendoza.swa.hexagonal.customer.application.adapters.rest.response.CreateUserResponse;
+import com.jmendoza.swa.hexagonal.customer.application.rest.response.CreateUserResponse;
 import com.jmendoza.swa.hexagonal.customer.common.exception.GlobalException;
 import com.jmendoza.swa.hexagonal.customer.domain.model.Customer;
 import com.jmendoza.swa.hexagonal.customer.domain.ports.inbound.CreateCustomerUseCase;
