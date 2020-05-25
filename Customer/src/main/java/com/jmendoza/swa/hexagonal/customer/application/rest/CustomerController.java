@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v1/customers")
 public class CustomerController {
 
     private final CreateCustomerUseCase createCustomerUseCase;
@@ -22,7 +22,7 @@ public class CustomerController {
         this.createCustomerUseCase = createCustomerUseCase;
     }
 
-    @PostMapping("/customer")
+    @PostMapping
     public ResponseEntity createUser(@Valid @RequestBody Customer customer) throws GlobalException {
         createCustomerUseCase.createCustomer(customer);
         return ResponseEntity.ok().body(CreateUserResponse.builder().id(customer.getId()).build());
