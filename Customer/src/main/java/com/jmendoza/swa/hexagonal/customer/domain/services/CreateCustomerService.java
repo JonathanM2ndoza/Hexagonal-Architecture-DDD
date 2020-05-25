@@ -1,5 +1,6 @@
 package com.jmendoza.swa.hexagonal.customer.domain.services;
 
+import com.jmendoza.swa.hexagonal.customer.common.customannotations.UseCase;
 import com.jmendoza.swa.hexagonal.customer.common.exception.GlobalException;
 import com.jmendoza.swa.hexagonal.customer.domain.model.Customer;
 import com.jmendoza.swa.hexagonal.customer.domain.ports.inbound.CreateCustomerUseCase;
@@ -9,6 +10,7 @@ import com.jmendoza.swa.hexagonal.customer.domain.ports.outbound.ExistsCustomerP
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
+@UseCase
 public class CreateCustomerService implements CreateCustomerUseCase {
 
     private CreateCustomerPort createCustomerPort;
