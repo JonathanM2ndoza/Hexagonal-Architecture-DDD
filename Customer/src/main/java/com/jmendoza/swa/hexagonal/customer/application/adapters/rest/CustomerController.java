@@ -1,9 +1,9 @@
 package com.jmendoza.swa.hexagonal.customer.application.adapters.rest;
 
 import com.jmendoza.swa.hexagonal.customer.application.adapters.rest.response.CreateUserResponse;
+import com.jmendoza.swa.hexagonal.customer.common.exception.GlobalException;
 import com.jmendoza.swa.hexagonal.customer.domain.model.Customer;
 import com.jmendoza.swa.hexagonal.customer.domain.ports.inbound.CreateCustomerUseCase;
-import com.jmendoza.swa.hexagonal.customer.infrastracture.adapters.configuration.exception.GlobalException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

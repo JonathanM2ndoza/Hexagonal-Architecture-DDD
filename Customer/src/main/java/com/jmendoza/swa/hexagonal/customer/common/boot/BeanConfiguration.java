@@ -1,4 +1,4 @@
-package com.jmendoza.swa.hexagonal.customer.infrastracture.adapters.configuration.boot;
+package com.jmendoza.swa.hexagonal.customer.common.boot;
 
 import com.jmendoza.swa.hexagonal.customer.domain.services.CreateCustomerService;
 import com.jmendoza.swa.hexagonal.customer.infrastracture.adapters.databases.mongo.CustomerRepositoryAdapter;

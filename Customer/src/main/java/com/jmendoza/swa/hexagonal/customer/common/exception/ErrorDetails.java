@@ -1,4 +1,4 @@
-package com.jmendoza.swa.hexagonal.customer.infrastracture.adapters.configuration.exception;
+package com.jmendoza.swa.hexagonal.customer.common.exception;
 
 import java.util.Date;
 
