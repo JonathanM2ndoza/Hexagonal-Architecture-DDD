@@ -5,7 +5,7 @@ import com.jmendoza.swa.hexagonal.customer.common.exception.GlobalException;
 import com.jmendoza.swa.hexagonal.customer.domain.model.Customer;
 import com.jmendoza.swa.hexagonal.customer.domain.ports.inbound.CreateCustomerUseCase;
 import com.jmendoza.swa.hexagonal.customer.domain.ports.outbound.CreateCustomerPort;
-import com.jmendoza.swa.hexagonal.customer.domain.ports.outbound.EncryptPasswordPort;
+import com.jmendoza.swa.hexagonal.customer.domain.ports.outbound.PasswordEncodePort;
 import com.jmendoza.swa.hexagonal.customer.domain.ports.outbound.ExistsCustomerPort;
 import lombok.AllArgsConstructor;
 
@@ -15,7 +15,7 @@ public class CreateCustomerService implements CreateCustomerUseCase {
 
     private CreateCustomerPort createCustomerPort;
 
-    private EncryptPasswordPort encryptPasswordPort;
+    private PasswordEncodePort passwordEncodePort;
 
     private ExistsCustomerPort existsCustomerPort;
 
@@ -25,7 +25,7 @@ public class CreateCustomerService implements CreateCustomerUseCase {
         if (existsCustomerPort.existsByEmail(customer.getEmail()))
             throw new GlobalException("This email is already registered.");
 
-        customer.setPassword(encryptPasswordPort.passwordEncoder(customer.getPassword()));
+        customer.setPassword(passwordEncodePort.passwordEncoder(customer.getPassword()));
         createCustomerPort.createCustomer(customer);
     }
 }
