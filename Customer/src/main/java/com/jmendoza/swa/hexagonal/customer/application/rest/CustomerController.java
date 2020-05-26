@@ -4,6 +4,7 @@ import com.jmendoza.swa.hexagonal.customer.application.rest.response.CreateUserR
 import com.jmendoza.swa.hexagonal.customer.common.exception.GlobalException;
 import com.jmendoza.swa.hexagonal.customer.domain.model.Customer;
 import com.jmendoza.swa.hexagonal.customer.domain.ports.inbound.CreateCustomerUseCase;
+import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,13 +15,10 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/v1/customers")
+@AllArgsConstructor
 public class CustomerController {
 
     private final CreateCustomerUseCase createCustomerUseCase;
-
-    public CustomerController(CreateCustomerUseCase createCustomerUseCase) {
-        this.createCustomerUseCase = createCustomerUseCase;
-    }
 
     @PostMapping
     public ResponseEntity createUser(@Valid @RequestBody Customer customer) throws GlobalException {
