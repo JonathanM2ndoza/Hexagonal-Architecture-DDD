@@ -1,5 +1,6 @@
 package com.jmendoza.swa.hexagonal.customer.domain.services;
 
+import com.jmendoza.swa.hexagonal.customer.common.constants.CustomerConstanst;
 import com.jmendoza.swa.hexagonal.customer.common.customannotations.UseCase;
 import com.jmendoza.swa.hexagonal.customer.common.exception.GlobalException;
 import com.jmendoza.swa.hexagonal.customer.domain.model.Customer;
@@ -21,7 +22,7 @@ public class CreateCustomerService implements CreateCustomerUseCase {
     public void createCustomer(Customer customer) throws GlobalException {
 
         if (existsCustomerPort.existsByEmail(customer.getEmail()))
-            throw new GlobalException("This email is already registered.");
+            throw new GlobalException(CustomerConstanst.THIS_EMAIL_IS_ALREADY_REGISTERED);
 
         customer.setPassword(passwordEncodePort.passwordEncoder(customer.getPassword()));
         createCustomerPort.createCustomer(customer);
