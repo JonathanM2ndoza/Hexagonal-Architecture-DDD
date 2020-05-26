@@ -14,9 +14,7 @@ import lombok.AllArgsConstructor;
 public class CreateCustomerService implements CreateCustomerUseCase {
 
     private CreateCustomerPort createCustomerPort;
-
     private PasswordEncodePort passwordEncodePort;
-
     private ExistsCustomerPort existsCustomerPort;
 
     @Override
