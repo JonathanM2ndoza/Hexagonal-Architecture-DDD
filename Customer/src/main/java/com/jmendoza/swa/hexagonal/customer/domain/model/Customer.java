@@ -24,7 +24,6 @@ public class Customer {
     private String email;
     @NonNull
     private String password;
-    @NonNull
     private String createdAt;
     private String updatedAt;
 }
