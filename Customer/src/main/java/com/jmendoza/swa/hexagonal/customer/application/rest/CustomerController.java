@@ -8,12 +8,10 @@ import com.jmendoza.swa.hexagonal.customer.common.exception.ResourceNotFoundExce
 import com.jmendoza.swa.hexagonal.customer.domain.model.Customer;
 import com.jmendoza.swa.hexagonal.customer.domain.ports.inbound.CreateCustomerUseCase;
 import com.jmendoza.swa.hexagonal.customer.domain.ports.inbound.CustomerLoginUseCase;
+import com.jmendoza.swa.hexagonal.customer.domain.ports.inbound.DeleteCustomerUseCase;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -24,6 +22,7 @@ public class CustomerController {
 
     private final CreateCustomerUseCase createCustomerUseCase;
     private final CustomerLoginUseCase customerLoginUseCase;
+    private final DeleteCustomerUseCase deleteCustomerUseCase;
     private final ResponseMapper responseMapper;
 
     @PostMapping
@@ -36,5 +35,11 @@ public class CustomerController {
     public ResponseEntity<CustomerLoginResponse> customerLogin(@Valid @RequestBody Customer customer) throws ResourceNotFoundException, GlobalException {
         CustomerLoginResponse customerLoginResponse = responseMapper.convertCustomerToCustomerLoginResponse(customerLoginUseCase.customerLogin(customer.getEmail(), customer.getPassword()));
         return ResponseEntity.ok().body(customerLoginResponse);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity deleteCustomer(@PathVariable(value = "id") String id) throws ResourceNotFoundException {
+        deleteCustomerUseCase.deleteCustomer(id);
+        return ResponseEntity.noContent().build();
     }
 }

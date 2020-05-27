@@ -1,16 +1,14 @@
 package com.jmendoza.swa.hexagonal.customer.infrastracture.databases.mongo;
 
 import com.jmendoza.swa.hexagonal.customer.domain.model.Customer;
-import com.jmendoza.swa.hexagonal.customer.domain.ports.outbound.CreateCustomerPort;
-import com.jmendoza.swa.hexagonal.customer.domain.ports.outbound.ExistsCustomerPort;
-import com.jmendoza.swa.hexagonal.customer.domain.ports.outbound.GetCustomerEmailPort;
+import com.jmendoza.swa.hexagonal.customer.domain.ports.outbound.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
 @Component
-public class CustomerRepositoryAdapter implements CreateCustomerPort, ExistsCustomerPort, GetCustomerEmailPort {
+public class CustomerRepositoryAdapter implements CreateCustomerPort, ExistsCustomerPort, GetCustomerEmailPort, GetCustomerIdPort, DeleteCustomerPort {
 
     @Autowired
     CustomerRepository customerRepository;
@@ -28,5 +26,15 @@ public class CustomerRepositoryAdapter implements CreateCustomerPort, ExistsCust
     @Override
     public Optional<Customer> getCustomerByEmail(String email) {
         return customerRepository.findByEmail(email);
+    }
+
+    @Override
+    public void deleteCustomer(Customer customer) {
+        customerRepository.delete(customer);
+    }
+
+    @Override
+    public Optional<Customer> getCustomerById(String id) {
+        return customerRepository.findById(id);
     }
 }
