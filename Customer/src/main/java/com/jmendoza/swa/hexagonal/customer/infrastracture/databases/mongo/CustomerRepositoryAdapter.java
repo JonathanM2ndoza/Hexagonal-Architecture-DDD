@@ -8,10 +8,10 @@ import org.springframework.stereotype.Component;
 import java.util.Optional;
 
 @Component
-public class CustomerRepositoryAdapter implements CreateCustomerPort, ExistsCustomerPort, GetCustomerEmailPort, GetCustomerIdPort, DeleteCustomerPort {
+public class CustomerRepositoryAdapter implements CreateCustomerPort, ExistsCustomerPort, GetCustomerEmailPort, GetCustomerIdPort, DeleteCustomerPort, UpdateCustomerPort {
 
     @Autowired
-    CustomerRepository customerRepository;
+    private CustomerRepository customerRepository;
 
     @Override
     public void createCustomer(Customer customer) {
@@ -36,5 +36,10 @@ public class CustomerRepositoryAdapter implements CreateCustomerPort, ExistsCust
     @Override
     public Optional<Customer> getCustomerById(String id) {
         return customerRepository.findById(id);
+    }
+
+    @Override
+    public void updateCustomer(Customer customer) {
+        customerRepository.save(customer);
     }
 }

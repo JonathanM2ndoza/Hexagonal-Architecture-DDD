@@ -9,6 +9,7 @@ import com.jmendoza.swa.hexagonal.customer.domain.model.Customer;
 import com.jmendoza.swa.hexagonal.customer.domain.ports.inbound.CreateCustomerUseCase;
 import com.jmendoza.swa.hexagonal.customer.domain.ports.inbound.CustomerLoginUseCase;
 import com.jmendoza.swa.hexagonal.customer.domain.ports.inbound.DeleteCustomerUseCase;
+import com.jmendoza.swa.hexagonal.customer.domain.ports.inbound.UpdateCustomerUseCase;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +24,8 @@ public class CustomerController {
     private final CreateCustomerUseCase createCustomerUseCase;
     private final CustomerLoginUseCase customerLoginUseCase;
     private final DeleteCustomerUseCase deleteCustomerUseCase;
+    private final UpdateCustomerUseCase updateCustomerUseCase;
+
     private final ResponseMapper responseMapper;
 
     @PostMapping
@@ -40,6 +43,13 @@ public class CustomerController {
     @DeleteMapping("/{id}")
     public ResponseEntity deleteCustomer(@PathVariable(value = "id") String id) throws ResourceNotFoundException {
         deleteCustomerUseCase.deleteCustomer(id);
+        return ResponseEntity.noContent().build();
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity updateCustomer(@PathVariable(value = "id") String id,
+                                         @Valid @RequestBody Customer customer) throws ResourceNotFoundException {
+        updateCustomerUseCase.updateCustomer(id, customer);
         return ResponseEntity.noContent().build();
     }
 }
