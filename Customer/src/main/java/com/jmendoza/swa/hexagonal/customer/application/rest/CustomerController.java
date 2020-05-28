@@ -36,7 +36,7 @@ public class CustomerController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<CustomerLoginResponse> customerLogin(@Valid @RequestBody Customer customer) throws ResourceNotFoundException, GlobalException {
+    public ResponseEntity<CustomerLoginResponse> customerLogin(@Valid @RequestBody Customer customer) throws ResourceNotFoundException, GlobalException, ParameterNotFoundException {
         CustomerLoginResponse customerLoginResponse = responseMapper.convertCustomerToCustomerLoginResponse(customerLoginUseCase.customerLogin(customer.getEmail(), customer.getPassword()));
         return ResponseEntity.ok().body(customerLoginResponse);
     }
