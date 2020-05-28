@@ -9,9 +9,9 @@ import org.springframework.web.context.request.WebRequest;
 import java.util.Date;
 
 @ControllerAdvice
-public class GlobalExceptionHandler {
+public class CustomExceptionHandler {
 
-    //private static final Logger loggerExceptionHandler = LogManager.getLogger(GlobalExceptionHandler.class);
+    //private static final Logger loggerExceptionHandler = LogManager.getLogger(CustomExceptionHandler.class);
 
     @ExceptionHandler(ResourceNotFoundException.class)
     public ResponseEntity resourceNotFoundException(ResourceNotFoundException ex, WebRequest request) {
@@ -25,5 +25,12 @@ public class GlobalExceptionHandler {
         ErrorDetails errorDetails = new ErrorDetails(new Date(), ex.getMessage(), request.getDescription(false));
         //loggerExceptionHandler.error(ex);
         return new ResponseEntity<>(errorDetails, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+    @ExceptionHandler({ParameterNotFoundException.class})
+    public ResponseEntity parameterNotFoundExceptionHandler(ParameterNotFoundException ex, WebRequest request) {
+        ErrorDetails errorDetails = new ErrorDetails(new Date(), ex.getMessage(), request.getDescription(false));
+        //loggerExceptionHandler.error(ex);
+        return new ResponseEntity<>(errorDetails, HttpStatus.BAD_REQUEST);
     }
 }
