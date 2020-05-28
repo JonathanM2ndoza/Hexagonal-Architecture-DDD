@@ -21,6 +21,5 @@ public class DeleteCustomerService implements DeleteCustomerUseCase {
         Customer customer = getCustomerIdPort.getCustomerById(id)
                 .orElseThrow(() -> new ResourceNotFoundException(CustomerConstanst.CUSTOMER_NOT_FOUND + id));
         deleteCustomerPort.deleteCustomer(customer);
-
     }
 }
