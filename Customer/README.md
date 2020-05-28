@@ -26,7 +26,7 @@ This example was implemented with Spring Boot, MongoDB Atlas.
 
 ![Screenshot](prtsc/Customer-3.1.png)
 
-![Screenshot](prtsc/Customer-3.3.png)
+![Screenshot](prtsc/Customer-3.2.png)
 
 **MongoDB Atlas**
 
