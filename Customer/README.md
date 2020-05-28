@@ -18,3 +18,24 @@ This example was implemented with Spring Boot, MongoDB Atlas.
 
 ![Screenshot](prtsc/Customer-2.png)
 
+## Create Customer
+
+**Postman**
+
+![Screenshot](prtsc/Customer-3.png)
+
+![Screenshot](prtsc/Customer-3.1.png)
+
+![Screenshot](prtsc/Customer-3.3.png)
+
+**MongoDB Atlas**
+
+![Screenshot](prtsc/Customer-3.3.png)
+
+## Customer Login
+
+**Postman**
+
+![Screenshot](prtsc/Customer-4.png)
+
+
