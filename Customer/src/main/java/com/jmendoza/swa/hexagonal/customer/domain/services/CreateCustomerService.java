@@ -23,30 +23,21 @@ public class CreateCustomerService implements CreateCustomerUseCase {
     @Override
     public void createCustomer(Customer customer) throws GlobalException, ParameterNotFoundException {
 
-        // Field validations to save
         if (StringUtils.isBlank(customer.getFirstName()))
             getMessageParameterNotFoundException("firstName");
-
         if (StringUtils.isBlank(customer.getLastName()))
             getMessageParameterNotFoundException("lastName");
-
         if (StringUtils.isBlank(customer.getEmail()))
             getMessageParameterNotFoundException("email");
-
         if (StringUtils.isBlank(customer.getPassword()))
             getMessageParameterNotFoundException("password");
-
         if (StringUtils.isBlank(customer.getCreatedAt()))
             getMessageParameterNotFoundException("createdAt");
 
-        // Validate that the email does not exist
         if (existsCustomerPort.existsByEmail(customer.getEmail()))
             throw new GlobalException(CustomerConstanst.THIS_EMAIL_IS_ALREADY_REGISTERED);
 
-        // Encrypt password
         customer.setPassword(passwordEncodePort.passwordEncoder(customer.getPassword()));
-
-        // Save Customer
         createCustomerPort.createCustomer(customer);
     }
 
