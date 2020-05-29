@@ -58,7 +58,7 @@ Note: The words Application, Domain and Infrastructure do not come from the orig
 - https://dzone.com/articles/hexagonal-architecture-in-java-2
 - https://blog.octo.com/en/hexagonal-architecture-three-principles-and-an-implementation-example/#principles
 
-## Basic Microservices Architecture
+## Microservices Architecture
 
 ![Screenshot](prtsc/Hexagonal-Architecture-Microservices.jpg)
 
