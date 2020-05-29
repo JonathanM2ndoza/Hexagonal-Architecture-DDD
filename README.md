@@ -2,7 +2,7 @@
 
 Example of how to use Domain Driven Design (DDD), S.O.L.I.D and Hexagonal Architecture with Microservices. 
 
-This example is made with Spring Boot, MongoDB, PostgreSQL.
+This example is made with Spring Boot, MongoDB.
 
 ## Domain Driven Design (DDD)
 
