@@ -62,6 +62,6 @@ Note: The words Application, Domain and Infrastructure do not come from the orig
 
 ![Screenshot](prtsc/Hexagonal-Architecture-Microservices.jpg)
 
-In our example we will use the basic architecture above, all microservices are implemented with Spring Boot and MongoDB Atlas, however microservices and BDs can be implemented with different technologies.
+In our example we will use the basic architecture above, all microservices are implemented with Spring Boot and MongoDB Atlas, however microservices and DB can be implemented with different technologies.
 
 
