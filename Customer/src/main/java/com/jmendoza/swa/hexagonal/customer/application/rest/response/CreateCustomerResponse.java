@@ -9,6 +9,6 @@ import lombok.Setter;
 @Setter
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class CreateUserResponse {
+public class CreateCustomerResponse {
     private String id;
 }

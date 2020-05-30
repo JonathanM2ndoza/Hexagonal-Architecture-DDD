@@ -1,6 +1,6 @@
 package com.jmendoza.swa.hexagonal.customer.application.rest;
 
-import com.jmendoza.swa.hexagonal.customer.application.rest.response.CreateUserResponse;
+import com.jmendoza.swa.hexagonal.customer.application.rest.response.CreateCustomerResponse;
 import com.jmendoza.swa.hexagonal.customer.application.rest.response.CustomerLoginResponse;
 import com.jmendoza.swa.hexagonal.customer.application.rest.response.ResponseMapper;
 import com.jmendoza.swa.hexagonal.customer.common.exception.GlobalException;
@@ -30,9 +30,9 @@ public class CustomerController {
     private final ResponseMapper responseMapper;
 
     @PostMapping
-    public ResponseEntity<CreateUserResponse> createCustomer(@Valid @RequestBody Customer customer) throws GlobalException, ParameterNotFoundException {
+    public ResponseEntity<CreateCustomerResponse> createCustomer(@Valid @RequestBody Customer customer) throws GlobalException, ParameterNotFoundException {
         createCustomerUseCase.createCustomer(customer);
-        return ResponseEntity.ok().body(CreateUserResponse.builder().id(customer.getId()).build());
+        return ResponseEntity.ok().body(CreateCustomerResponse.builder().id(customer.getId()).build());
     }
 
     @PostMapping("/login")
