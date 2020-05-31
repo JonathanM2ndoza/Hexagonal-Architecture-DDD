@@ -2,10 +2,12 @@ package com.jmendoza.swa.hexagonal.product.domain.services;
 
 import com.jmendoza.swa.hexagonal.product.common.constants.ProductConstanst;
 import com.jmendoza.swa.hexagonal.product.common.customannotations.UseCase;
+import com.jmendoza.swa.hexagonal.product.common.exception.GlobalException;
 import com.jmendoza.swa.hexagonal.product.common.exception.ParameterNotFoundException;
 import com.jmendoza.swa.hexagonal.product.domain.model.Product;
 import com.jmendoza.swa.hexagonal.product.domain.ports.inbound.CreateProductUseCase;
 import com.jmendoza.swa.hexagonal.product.domain.ports.outbound.CreateProductPort;
+import com.jmendoza.swa.hexagonal.product.domain.ports.outbound.ExistsProductPort;
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 
@@ -14,9 +16,10 @@ import org.apache.commons.lang3.StringUtils;
 public class CreateProductService implements CreateProductUseCase {
 
     private CreateProductPort createProductPort;
+    private ExistsProductPort existsProductPort;
 
     @Override
-    public void createProduct(Product product) throws ParameterNotFoundException {
+    public void createProduct(Product product) throws ParameterNotFoundException, GlobalException {
 
         if (StringUtils.isBlank(product.getProductName()))
             getMessageParameterNotFoundException("productName");
@@ -29,6 +32,8 @@ public class CreateProductService implements CreateProductUseCase {
         if (StringUtils.isBlank(product.getSerialNumber()))
             getMessageParameterNotFoundException("serialNumber");
 
+        if (existsProductPort.existsBySerialNumber(product.getSerialNumber()))
+            throw new GlobalException(ProductConstanst.THIS_PRODUCT_IS_ALREADY_REGISTERED);
 
         createProductPort.createProduct(product);
     }

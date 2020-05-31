@@ -1,7 +1,8 @@
 package com.jmendoza.swa.hexagonal.product.application.rest;
 
-import com.jmendoza.swa.hexagonal.product.common.exception.ParameterNotFoundException;
 import com.jmendoza.swa.hexagonal.product.application.rest.response.CreateProductResponse;
+import com.jmendoza.swa.hexagonal.product.common.exception.GlobalException;
+import com.jmendoza.swa.hexagonal.product.common.exception.ParameterNotFoundException;
 import com.jmendoza.swa.hexagonal.product.domain.model.Product;
 import com.jmendoza.swa.hexagonal.product.domain.ports.inbound.CreateProductUseCase;
 import lombok.AllArgsConstructor;
@@ -22,7 +23,7 @@ public class ProductController {
     //private final DeleteCustomerUseCase deleteCustomerUseCase;
 
     @PostMapping
-    public ResponseEntity<CreateProductResponse> createProduct(@Valid @RequestBody Product product) throws ParameterNotFoundException {
+    public ResponseEntity<CreateProductResponse> createProduct(@Valid @RequestBody Product product) throws GlobalException, ParameterNotFoundException {
         createProductUseCase.createProduct(product);
         return ResponseEntity.ok().body(CreateProductResponse.builder().id(product.getId()).build());
     }
