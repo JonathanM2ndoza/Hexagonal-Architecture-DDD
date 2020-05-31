@@ -24,6 +24,11 @@ public class CreateProductService implements CreateProductUseCase {
             getMessageParameterNotFoundException("productDescription");
         if (product.getPrice() == null || Double.compare(product.getPrice(), ProductConstanst.D_2) <= ProductConstanst.INT)
             getMessageParameterNotFoundException("price");
+        if (StringUtils.isBlank(product.getCreatedAt()))
+            getMessageParameterNotFoundException("createdAt");
+        if (StringUtils.isBlank(product.getSerialNumber()))
+            getMessageParameterNotFoundException("serialNumber");
+
 
         createProductPort.createProduct(product);
     }

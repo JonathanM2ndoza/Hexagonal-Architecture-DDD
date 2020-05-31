@@ -12,4 +12,6 @@ public class Product {
     private String productName;
     private String productDescription;
     private Double price;
+    private String createdAt;
+    private String serialNumber;
 }
