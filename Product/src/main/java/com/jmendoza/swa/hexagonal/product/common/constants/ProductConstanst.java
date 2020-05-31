@@ -7,6 +7,7 @@ public class ProductConstanst {
     public static final double D_2 = 0.0;
     public static final int INT = 0;
     public static final String THIS_PRODUCT_IS_ALREADY_REGISTERED = "This Product is already registered ";
+    public static final String PRODUCTS_NOT_FOUND = "Products not found";
 
     private ProductConstanst() {
     }
