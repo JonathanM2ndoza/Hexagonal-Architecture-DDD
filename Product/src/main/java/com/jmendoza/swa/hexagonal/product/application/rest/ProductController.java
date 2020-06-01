@@ -7,6 +7,7 @@ import com.jmendoza.swa.hexagonal.product.common.exception.ResourceNotFoundExcep
 import com.jmendoza.swa.hexagonal.product.domain.model.Product;
 import com.jmendoza.swa.hexagonal.product.domain.ports.inbound.CreateProductUseCase;
 import com.jmendoza.swa.hexagonal.product.domain.ports.inbound.DeleteProductUseCase;
+import com.jmendoza.swa.hexagonal.product.domain.ports.inbound.GetProductUseCase;
 import com.jmendoza.swa.hexagonal.product.domain.ports.inbound.GetProductsUseCase;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +24,7 @@ public class ProductController {
     private final CreateProductUseCase createProductUseCase;
     private final DeleteProductUseCase deleteProductUseCase;
     private final GetProductsUseCase getProductsUseCase;
+    private final GetProductUseCase getProductUseCase;
 
     @PostMapping
     public ResponseEntity<CreateProductResponse> createProduct(@Valid @RequestBody Product product) throws GlobalException, ParameterNotFoundException {
@@ -42,4 +44,9 @@ public class ProductController {
         return ResponseEntity.ok().body(productList);
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<Product> getProduct(@PathVariable(value = "id") String id) throws ResourceNotFoundException {
+        Product product = getProductUseCase.getProduct(id);
+        return ResponseEntity.ok().body(product);
+    }
 }
