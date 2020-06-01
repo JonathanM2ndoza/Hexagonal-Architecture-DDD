@@ -16,8 +16,7 @@ public class GetProductService implements GetProductUseCase {
 
     @Override
     public Product getProduct(String id) throws ResourceNotFoundException {
-        Product product = getProductIdPort.getProductById(id)
+        return getProductIdPort.getProductById(id)
                 .orElseThrow(() -> new ResourceNotFoundException(ProductConstanst.PRODUCT_NOT_FOUND + id));
-        return product;
     }
 }
