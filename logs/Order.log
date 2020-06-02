@@ -312,3 +312,190 @@ Caused by: java.net.BindException: La dirección ya se está usando
 [2020-06-02 00:32:50.037] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
 [2020-06-02 00:32:50.039] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
 [2020-06-02 00:32:50.068] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-06-02 00:47:23.520] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 25590 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
+[2020-06-02 00:47:23.539] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+[2020-06-02 00:47:23.541] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
+[2020-06-02 00:47:24.631] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-02 00:47:24.654] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 18ms. Found 0 JDBC repository interfaces.
+[2020-06-02 00:47:25.209] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-02 00:47:25.218] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:47:25.218] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-02 00:47:25.219] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-02 00:47:25.281] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-02 00:47:25.281] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1468 ms
+[2020-06-02 00:47:25.664] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:47:25.867] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-02 00:47:26.090] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-02 00:47:26.161] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:47:26.178] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
+[2020-06-02 00:47:26.191] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Started OrderApplication in 3.694 seconds (JVM running for 5.586)
+[2020-06-02 00:47:45.955] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [[Tomcat].[localhost].[/]] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-06-02 00:47:45.956] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Initializing Servlet 'dispatcherServlet'
+[2020-06-02 00:47:45.964] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Completed initialization in 8 ms
+[2020-06-02 00:47:46.095] [ERROR] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [common.exception.CustomExceptionHandler] | com.jmendoza.swa.hexagonal.order.common.exception.GlobalException: Exception createOrder: This statement does not declare an OUT parameter.  Use { ?= call ... } to declare one.
+[2020-06-02 00:48:21.973] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:48:21.974] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-06-02 00:48:21.985] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-06-02 00:48:29.349] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 25939 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
+[2020-06-02 00:48:29.370] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+[2020-06-02 00:48:29.372] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
+[2020-06-02 00:48:30.521] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-02 00:48:30.548] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 22ms. Found 0 JDBC repository interfaces.
+[2020-06-02 00:48:31.189] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-02 00:48:31.197] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:48:31.198] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-02 00:48:31.198] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-02 00:48:31.263] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-02 00:48:31.263] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1612 ms
+[2020-06-02 00:48:31.649] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:48:31.861] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-02 00:48:32.070] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-02 00:48:32.152] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:48:32.171] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
+[2020-06-02 00:48:32.190] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Started OrderApplication in 3.534 seconds (JVM running for 4.866)
+[2020-06-02 00:48:38.820] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [[Tomcat].[localhost].[/]] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-06-02 00:48:38.820] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Initializing Servlet 'dispatcherServlet'
+[2020-06-02 00:48:38.827] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Completed initialization in 7 ms
+[2020-06-02 00:48:39.014] [ERROR] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [common.exception.CustomExceptionHandler] | com.jmendoza.swa.hexagonal.order.common.exception.GlobalException: Exception createOrder: A CallableStatement function was executed and the out parameter 1 was of type java.sql.Types=-5 however type java.sql.Types=4 was registered.
+[2020-06-02 00:55:14.578] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:55:14.580] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-06-02 00:55:14.590] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-06-02 00:55:22.545] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 26607 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
+[2020-06-02 00:55:22.560] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+[2020-06-02 00:55:22.562] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
+[2020-06-02 00:55:23.472] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-02 00:55:23.493] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 17ms. Found 0 JDBC repository interfaces.
+[2020-06-02 00:55:24.008] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-02 00:55:24.016] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:55:24.016] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-02 00:55:24.017] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-02 00:55:24.088] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-02 00:55:24.089] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1274 ms
+[2020-06-02 00:55:24.562] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:55:24.771] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-02 00:55:24.967] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-02 00:55:25.044] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:55:25.062] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
+[2020-06-02 00:55:25.077] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Started OrderApplication in 3.322 seconds (JVM running for 4.913)
+[2020-06-02 00:55:29.573] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [[Tomcat].[localhost].[/]] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-06-02 00:55:29.573] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Initializing Servlet 'dispatcherServlet'
+[2020-06-02 00:55:29.579] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Completed initialization in 6 ms
+[2020-06-02 00:55:29.814] [ERROR] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [common.exception.CustomExceptionHandler] | com.jmendoza.swa.hexagonal.order.common.exception.GlobalException: Exception createOrder: This statement does not declare an OUT parameter.  Use { ?= call ... } to declare one.
+[2020-06-02 00:57:08.158] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:57:08.160] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-06-02 00:57:08.210] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-06-02 00:57:17.149] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 26943 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
+[2020-06-02 00:57:17.169] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+[2020-06-02 00:57:17.171] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
+[2020-06-02 00:57:18.230] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-02 00:57:18.255] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 20ms. Found 0 JDBC repository interfaces.
+[2020-06-02 00:57:18.810] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-02 00:57:18.818] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:57:18.819] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-02 00:57:18.819] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-02 00:57:18.885] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-02 00:57:18.885] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1429 ms
+[2020-06-02 00:57:19.261] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:57:19.460] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-02 00:57:19.685] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-02 00:57:19.762] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:57:19.780] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
+[2020-06-02 00:57:19.796] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Started OrderApplication in 3.331 seconds (JVM running for 4.84)
+[2020-06-02 00:57:23.357] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [[Tomcat].[localhost].[/]] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-06-02 00:57:23.358] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Initializing Servlet 'dispatcherServlet'
+[2020-06-02 00:57:23.364] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Completed initialization in 6 ms
+[2020-06-02 00:57:23.511] [ERROR] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [common.exception.CustomExceptionHandler] | com.jmendoza.swa.hexagonal.order.common.exception.GlobalException: Exception createOrder: A CallableStatement function was executed and the out parameter 1 was of type java.sql.Types=-5 however type java.sql.Types=4 was registered.
+[2020-06-02 01:00:07.655] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 01:00:07.657] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-06-02 01:00:07.671] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-06-02 01:00:15.796] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 27370 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
+[2020-06-02 01:00:15.819] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+[2020-06-02 01:00:15.822] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
+[2020-06-02 01:00:16.894] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-02 01:00:16.916] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 18ms. Found 0 JDBC repository interfaces.
+[2020-06-02 01:00:17.417] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-02 01:00:17.425] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 01:00:17.426] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-02 01:00:17.426] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-02 01:00:17.491] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-02 01:00:17.491] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1294 ms
+[2020-06-02 01:00:17.886] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-02 01:00:18.091] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-02 01:00:18.282] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-02 01:00:18.361] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-02 01:00:18.380] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
+[2020-06-02 01:00:18.395] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Started OrderApplication in 3.49 seconds (JVM running for 4.78)
+[2020-06-02 01:00:21.807] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [[Tomcat].[localhost].[/]] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-06-02 01:00:21.808] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Initializing Servlet 'dispatcherServlet'
+[2020-06-02 01:00:21.815] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Completed initialization in 7 ms
+[2020-06-02 01:00:22.046] [ERROR] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [common.exception.CustomExceptionHandler] | com.jmendoza.swa.hexagonal.order.common.exception.GlobalException: Exception createOrder: A CallableStatement function was executed and the out parameter 1 was of type java.sql.Types=-5 however type java.sql.Types=5 was registered.
+[2020-06-02 01:00:48.179] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 01:00:48.180] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-06-02 01:00:48.194] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-06-02 01:00:55.908] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 27664 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
+[2020-06-02 01:00:55.927] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+[2020-06-02 01:00:55.929] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
+[2020-06-02 01:00:56.835] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-02 01:00:56.859] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 20ms. Found 0 JDBC repository interfaces.
+[2020-06-02 01:00:57.328] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-02 01:00:57.336] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 01:00:57.337] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-02 01:00:57.337] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-02 01:00:57.406] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-02 01:00:57.407] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1182 ms
+[2020-06-02 01:00:57.806] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-02 01:00:58.007] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-02 01:00:58.197] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-02 01:00:58.276] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-02 01:00:58.295] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
+[2020-06-02 01:00:58.309] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Started OrderApplication in 3.11 seconds (JVM running for 4.399)
+[2020-06-02 01:01:15.000] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [[Tomcat].[localhost].[/]] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-06-02 01:01:15.001] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Initializing Servlet 'dispatcherServlet'
+[2020-06-02 01:01:15.007] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Completed initialization in 6 ms
+[2020-06-02 01:01:15.167] [ERROR] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [common.exception.CustomExceptionHandler] | com.jmendoza.swa.hexagonal.order.common.exception.GlobalException: Exception createOrder: Parameter of type java.sql.Types=-5 was registered, but call to getInt (sqltype=java.sql.Types=4) was made.
+[2020-06-02 01:03:19.325] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 01:03:19.326] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-06-02 01:03:19.337] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-06-02 01:03:27.447] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 28057 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
+[2020-06-02 01:03:27.455] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+[2020-06-02 01:03:27.456] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
+[2020-06-02 01:03:28.562] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-02 01:03:28.587] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 20ms. Found 0 JDBC repository interfaces.
+[2020-06-02 01:03:29.128] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-02 01:03:29.137] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 01:03:29.138] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-02 01:03:29.138] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-02 01:03:29.206] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-02 01:03:29.206] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1464 ms
+[2020-06-02 01:03:29.601] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-02 01:03:29.793] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-02 01:03:29.998] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-02 01:03:30.068] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-02 01:03:30.084] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
+[2020-06-02 01:03:30.095] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Started OrderApplication in 3.306 seconds (JVM running for 4.74)
+[2020-06-02 01:03:39.280] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 01:03:39.282] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-06-02 01:03:39.304] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-06-02 01:03:59.719] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 28350 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
+[2020-06-02 01:03:59.734] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+[2020-06-02 01:03:59.737] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
+[2020-06-02 01:04:00.801] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-02 01:04:00.832] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 26ms. Found 0 JDBC repository interfaces.
+[2020-06-02 01:04:01.301] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-02 01:04:01.309] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 01:04:01.310] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-02 01:04:01.310] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-02 01:04:01.374] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-02 01:04:01.374] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1355 ms
+[2020-06-02 01:04:01.742] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-02 01:04:01.941] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-02 01:04:02.137] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-02 01:04:02.208] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-02 01:04:02.224] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
+[2020-06-02 01:04:02.235] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Started OrderApplication in 3.25 seconds (JVM running for 4.772)
+[2020-06-02 01:04:08.121] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [[Tomcat].[localhost].[/]] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-06-02 01:04:08.122] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Initializing Servlet 'dispatcherServlet'
+[2020-06-02 01:04:08.129] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Completed initialization in 7 ms
+[2020-06-02 01:06:36.034] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 01:06:36.036] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-06-02 01:06:36.051] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
+import java.sql.Types;
 
 @Repository
 public class OrderRepositoryAdapter implements CreateOrderPort {
@@ -19,18 +20,19 @@ public class OrderRepositoryAdapter implements CreateOrderPort {
     @Override
     public void createOrder(Order order) throws GlobalException {
 
-        final String procedureCall = " call create_order(?, ?, ?) ";
+        final String procedureCall = "{ ? = call create_order(?, ?, ?)}";
 
         try (Connection connection = jdbcTemplate.getDataSource().getConnection();
              CallableStatement callableStatement = connection.prepareCall(procedureCall)
         ) {
-            callableStatement.setString(1, order.getCustomerId());
-            callableStatement.setTimestamp(2, new java.sql.Timestamp(order.getCreatedAt().getTime()));
-            callableStatement.setDouble(3, order.getAmountOrder());
-            //callableStatement.registerOutParameter(4, Types.INTEGER);
+            callableStatement.registerOutParameter(1, Types.BIGINT);
+            callableStatement.setString(2, order.getCustomerId());
+            callableStatement.setTimestamp(3, new java.sql.Timestamp(order.getCreatedAt().getTime()));
+            callableStatement.setDouble(4, order.getAmountOrder());
 
             callableStatement.execute();
-            //order.setId(Integer.toString(callableStatement.getInt(4)));
+
+            order.setId(Long.toString(callableStatement.getLong(1)));
         } catch (Exception e) {
             throw new GlobalException("Exception createOrder: " + e.getMessage());
         }
