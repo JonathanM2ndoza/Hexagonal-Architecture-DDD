@@ -1,20 +1,311 @@
-[2020-05-31 23:54:27.400] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 4837 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
-[2020-05-31 23:54:27.424] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
-[2020-05-31 23:54:27.427] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
-[2020-05-31 23:54:28.323] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-[2020-05-31 23:54:28.343] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 16ms. Found 0 JDBC repository interfaces.
-[2020-05-31 23:54:28.855] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
-[2020-05-31 23:54:28.863] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
-[2020-05-31 23:54:28.864] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
-[2020-05-31 23:54:28.864] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
-[2020-05-31 23:54:28.931] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
-[2020-05-31 23:54:28.931] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1278 ms
-[2020-05-31 23:54:29.272] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
-[2020-05-31 23:54:29.566] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
-[2020-05-31 23:54:29.777] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
-[2020-05-31 23:54:29.852] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
-[2020-05-31 23:54:29.870] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
-[2020-05-31 23:54:29.889] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Started OrderApplication in 3.286 seconds (JVM running for 4.7)
-[2020-05-31 23:55:18.883] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
-[2020-05-31 23:55:18.896] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
-[2020-05-31 23:55:18.897] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:02:22.990] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 20847 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
+[2020-06-02 00:02:23.006] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+[2020-06-02 00:02:23.008] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
+[2020-06-02 00:02:24.299] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-02 00:02:24.317] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 15ms. Found 0 JDBC repository interfaces.
+[2020-06-02 00:02:24.842] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-02 00:02:24.850] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:02:24.850] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-02 00:02:24.851] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-02 00:02:24.915] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-02 00:02:24.915] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1815 ms
+[2020-06-02 00:02:25.311] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:02:25.530] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-02 00:02:25.740] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-02 00:02:25.833] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:02:25.839] [WARN] [jmendoza-ThinkPad-T420] [main] [servlet.context.AnnotationConfigServletWebServerApplicationContext] | Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server
+[2020-06-02 00:02:25.842] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:02:25.843] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-06-02 00:02:25.851] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-06-02 00:02:25.855] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Pausing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:02:25.856] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Stopping service [Tomcat]
+[2020-06-02 00:02:25.861] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Stopping ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:02:25.861] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Destroying ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:02:25.872] [INFO] [jmendoza-ThinkPad-T420] [main] [autoconfigure.logging.ConditionEvaluationReportLoggingListener] | 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2020-06-02 00:02:25.878] [ERROR] [jmendoza-ThinkPad-T420] [main] [springframework.boot.SpringApplication] | Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:185) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:894) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at com.jmendoza.swa.hexagonal.order.OrderApplication.main(OrderApplication.java:10) [classes/:?]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:229) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:43) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 14 more
+Caused by: java.lang.IllegalArgumentException: standardService.connector.startFailed
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:231) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:282) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:213) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:43) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 14 more
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1058) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:282) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:213) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:43) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 14 more
+Caused by: java.net.BindException: La dirección ya se está usando
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_221]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_221]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_221]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[?:1.8.0_221]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[?:1.8.0_221]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1227) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:592) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1055) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:282) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:213) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:43) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 14 more
+[2020-06-02 00:02:49.188] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 21098 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
+[2020-06-02 00:02:49.203] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+[2020-06-02 00:02:49.204] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
+[2020-06-02 00:02:50.398] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-02 00:02:50.428] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 25ms. Found 0 JDBC repository interfaces.
+[2020-06-02 00:02:50.926] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-02 00:02:50.934] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:02:50.935] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-02 00:02:50.935] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-02 00:02:51.000] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-02 00:02:51.001] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1463 ms
+[2020-06-02 00:02:51.377] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:02:51.580] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-02 00:02:51.782] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-02 00:02:51.858] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:02:51.864] [WARN] [jmendoza-ThinkPad-T420] [main] [servlet.context.AnnotationConfigServletWebServerApplicationContext] | Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server
+[2020-06-02 00:02:51.865] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:02:51.866] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-06-02 00:02:51.869] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-06-02 00:02:51.872] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Pausing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:02:51.873] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Stopping service [Tomcat]
+[2020-06-02 00:02:51.878] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Stopping ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:02:51.878] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Destroying ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:02:51.887] [INFO] [jmendoza-ThinkPad-T420] [main] [autoconfigure.logging.ConditionEvaluationReportLoggingListener] | 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2020-06-02 00:02:51.893] [ERROR] [jmendoza-ThinkPad-T420] [main] [springframework.boot.SpringApplication] | Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:185) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:894) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at com.jmendoza.swa.hexagonal.order.OrderApplication.main(OrderApplication.java:10) [classes/:?]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:229) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:43) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 14 more
+Caused by: java.lang.IllegalArgumentException: standardService.connector.startFailed
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:231) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:282) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:213) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:43) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 14 more
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1058) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:282) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:213) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:43) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 14 more
+Caused by: java.net.BindException: La dirección ya se está usando
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_221]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_221]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_221]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[?:1.8.0_221]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[?:1.8.0_221]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1227) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:592) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1055) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:282) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:213) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:43) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 14 more
+[2020-06-02 00:04:11.613] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 21406 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
+[2020-06-02 00:04:11.630] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+[2020-06-02 00:04:11.631] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
+[2020-06-02 00:04:12.445] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-02 00:04:12.469] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 19ms. Found 0 JDBC repository interfaces.
+[2020-06-02 00:04:12.943] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-02 00:04:12.951] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:04:12.951] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-02 00:04:12.952] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-02 00:04:13.013] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-02 00:04:13.013] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1151 ms
+[2020-06-02 00:04:13.393] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:04:13.624] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-02 00:04:13.830] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-02 00:04:13.911] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:04:13.928] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
+[2020-06-02 00:04:13.945] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Started OrderApplication in 3.13 seconds (JVM running for 4.569)
+[2020-06-02 00:04:22.384] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [[Tomcat].[localhost].[/]] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-06-02 00:04:22.384] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Initializing Servlet 'dispatcherServlet'
+[2020-06-02 00:04:22.392] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Completed initialization in 7 ms
+[2020-06-02 00:16:43.533] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:16:43.535] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-06-02 00:16:43.543] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-06-02 00:17:26.321] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 22824 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
+[2020-06-02 00:17:26.333] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+[2020-06-02 00:17:26.334] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
+[2020-06-02 00:17:27.475] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-02 00:17:27.501] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 21ms. Found 0 JDBC repository interfaces.
+[2020-06-02 00:17:28.188] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-02 00:17:28.197] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:17:28.197] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-02 00:17:28.198] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-02 00:17:28.262] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-02 00:17:28.262] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1645 ms
+[2020-06-02 00:17:28.687] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:17:28.928] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-02 00:17:29.136] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-02 00:17:29.224] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:17:29.243] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
+[2020-06-02 00:17:29.258] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Started OrderApplication in 3.717 seconds (JVM running for 5.488)
+[2020-06-02 00:17:49.503] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [[Tomcat].[localhost].[/]] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-06-02 00:17:49.504] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Initializing Servlet 'dispatcherServlet'
+[2020-06-02 00:17:49.511] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Completed initialization in 6 ms
+[2020-06-02 00:17:49.732] [ERROR] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [common.exception.CustomExceptionHandler] | com.jmendoza.swa.hexagonal.order.common.exception.GlobalException: Exception createOrder: El índice de la columna está fuera de rango: 4, número de columnas: 3.
+[2020-06-02 00:18:20.495] [ERROR] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-2] [common.exception.CustomExceptionHandler] | com.jmendoza.swa.hexagonal.order.common.exception.GlobalException: Exception createOrder: El índice de la columna está fuera de rango: 4, número de columnas: 3.
+[2020-06-02 00:18:24.114] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:18:24.116] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-06-02 00:18:24.139] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-06-02 00:18:34.866] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 23151 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
+[2020-06-02 00:18:34.881] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+[2020-06-02 00:18:34.882] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
+[2020-06-02 00:18:36.106] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-02 00:18:36.129] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 18ms. Found 0 JDBC repository interfaces.
+[2020-06-02 00:18:36.637] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-02 00:18:36.646] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:18:36.646] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-02 00:18:36.647] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-02 00:18:36.715] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-02 00:18:36.715] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1471 ms
+[2020-06-02 00:18:37.111] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:18:37.316] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-02 00:18:37.524] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-02 00:18:37.598] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:18:37.616] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
+[2020-06-02 00:18:37.629] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Started OrderApplication in 3.438 seconds (JVM running for 4.816)
+[2020-06-02 00:18:45.740] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [[Tomcat].[localhost].[/]] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-06-02 00:18:45.741] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Initializing Servlet 'dispatcherServlet'
+[2020-06-02 00:18:45.748] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Completed initialization in 7 ms
+[2020-06-02 00:18:45.907] [ERROR] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [common.exception.CustomExceptionHandler] | com.jmendoza.swa.hexagonal.order.common.exception.GlobalException: Exception createOrder: ERROR: procedure create_order(character varying, unknown, double precision) does not exist
+  Hint: No procedure matches the given name and argument types. You might need to add explicit type casts.
+  Position: 7
+[2020-06-02 00:23:24.189] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:23:24.191] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-06-02 00:23:24.204] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-06-02 00:28:24.464] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 23794 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
+[2020-06-02 00:28:24.474] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+[2020-06-02 00:28:24.481] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
+[2020-06-02 00:28:25.711] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-02 00:28:25.738] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 22ms. Found 0 JDBC repository interfaces.
+[2020-06-02 00:28:26.262] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-02 00:28:26.270] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:28:26.271] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-02 00:28:26.271] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-02 00:28:26.338] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-02 00:28:26.338] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1573 ms
+[2020-06-02 00:28:26.784] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:28:27.021] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-02 00:28:27.276] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-02 00:28:27.369] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:28:27.418] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
+[2020-06-02 00:28:27.444] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Started OrderApplication in 3.72 seconds (JVM running for 5.202)
+[2020-06-02 00:28:42.735] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [[Tomcat].[localhost].[/]] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-06-02 00:28:42.735] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Initializing Servlet 'dispatcherServlet'
+[2020-06-02 00:28:42.742] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Completed initialization in 7 ms
+[2020-06-02 00:28:42.888] [ERROR] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [common.exception.CustomExceptionHandler] | com.jmendoza.swa.hexagonal.order.common.exception.GlobalException: Exception createOrder: ERROR: procedure create_order(character varying, unknown, double precision) does not exist
+  Hint: No procedure matches the given name and argument types. You might need to add explicit type casts.
+  Position: 7
+[2020-06-02 00:30:32.885] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:30:32.887] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-06-02 00:30:32.903] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-06-02 00:30:46.633] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 24127 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
+[2020-06-02 00:30:46.651] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+[2020-06-02 00:30:46.653] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
+[2020-06-02 00:30:47.898] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-02 00:30:47.930] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 25ms. Found 0 JDBC repository interfaces.
+[2020-06-02 00:30:48.469] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-02 00:30:48.477] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:30:48.478] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-02 00:30:48.478] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-02 00:30:48.560] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-02 00:30:48.560] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1588 ms
+[2020-06-02 00:30:49.010] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:30:49.236] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-02 00:30:49.452] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-02 00:30:49.530] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:30:49.550] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
+[2020-06-02 00:30:49.566] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Started OrderApplication in 3.705 seconds (JVM running for 5.63)
+[2020-06-02 00:30:53.631] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [[Tomcat].[localhost].[/]] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-06-02 00:30:53.632] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Initializing Servlet 'dispatcherServlet'
+[2020-06-02 00:30:53.639] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Completed initialization in 7 ms
+[2020-06-02 00:30:53.771] [ERROR] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [common.exception.CustomExceptionHandler] | com.jmendoza.swa.hexagonal.order.common.exception.GlobalException: Exception createOrder: No se ha especificado un valor para el parámetro 4.
+[2020-06-02 00:31:04.600] [ERROR] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-2] [common.exception.CustomExceptionHandler] | com.jmendoza.swa.hexagonal.order.common.exception.GlobalException: Exception createOrder: No se ha especificado un valor para el parámetro 4.
+[2020-06-02 00:31:07.843] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:31:07.844] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-06-02 00:31:07.856] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-06-02 00:31:15.620] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Starting OrderApplication on jmendoza-ThinkPad-T420 with PID 24415 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD)
+[2020-06-02 00:31:15.633] [DEBUG] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+[2020-06-02 00:31:15.634] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | No active profile set, falling back to default profiles: default
+[2020-06-02 00:31:17.359] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-02 00:31:17.424] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 58ms. Found 0 JDBC repository interfaces.
+[2020-06-02 00:31:18.042] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-02 00:31:18.051] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:31:18.052] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-02 00:31:18.052] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-02 00:31:18.130] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-02 00:31:18.130] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 2161 ms
+[2020-06-02 00:31:18.552] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:31:18.767] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-02 00:31:18.982] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-02 00:31:19.059] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-02 00:31:19.077] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
+[2020-06-02 00:31:19.091] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.order.OrderApplication] | Started OrderApplication in 4.084 seconds (JVM running for 5.669)
+[2020-06-02 00:31:33.386] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [[Tomcat].[localhost].[/]] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-06-02 00:31:33.386] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Initializing Servlet 'dispatcherServlet'
+[2020-06-02 00:31:33.397] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Completed initialization in 10 ms

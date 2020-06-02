@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.util.Date;
 import java.util.List;
 
 @Getter
@@ -12,11 +13,11 @@ import java.util.List;
 public class Order {
     private String id;
     private String customerId;
-    private String createdAt;
+    private Date createdAt;
     private List<OrderProduct> orderProductList;
     private Double amountOrder;
 
-    Double getAmountOrder() {
+    public Double getAmountOrder() {
         return orderProductList.stream().mapToDouble(OrderProduct::getAmount).sum();
     }
 }

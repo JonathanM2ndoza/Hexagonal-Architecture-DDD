@@ -21,7 +21,7 @@ public class CreateOrderService implements CreateOrderUseCase {
 
         if (StringUtils.isBlank(order.getCustomerId()))
             getMessageParameterNotFoundException("customerId");
-        if (StringUtils.isBlank(order.getCreatedAt()))
+        if (order.getCreatedAt() == null)
             getMessageParameterNotFoundException("createdAt");
         if (order.getOrderProductList() == null || order.getOrderProductList().isEmpty())
             getMessageParameterNotFoundException("orderProductList");
