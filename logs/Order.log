@@ -309,3 +309,6 @@ Caused by: java.net.BindException: La dirección ya se está usando
 [2020-06-02 00:31:33.386] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [[Tomcat].[localhost].[/]] | Initializing Spring DispatcherServlet 'dispatcherServlet'
 [2020-06-02 00:31:33.386] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Initializing Servlet 'dispatcherServlet'
 [2020-06-02 00:31:33.397] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] | Completed initialization in 10 ms
+[2020-06-02 00:32:50.037] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-06-02 00:32:50.039] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-06-02 00:32:50.068] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
