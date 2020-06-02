@@ -58,10 +58,5 @@ Note: The words Application, Domain and Infrastructure do not come from the orig
 - https://dzone.com/articles/hexagonal-architecture-in-java-2
 - https://blog.octo.com/en/hexagonal-architecture-three-principles-and-an-implementation-example/#principles
 
-## Microservices Architecture
-
-![Screenshot](prtsc/Hexagonal-Architecture-Microservices.jpg)
-
-In our example we will use the basic architecture above, all microservices are implemented with Spring Boot, MongoDB Atlas y PostgreSQL, however microservices and DB can be implemented with different technologies.
 
 
