@@ -11,7 +11,7 @@ import java.util.List;
 @Setter
 @ToString
 public class Order {
-    private String id;
+    private String orderId;
     private String customerId;
     private Date createdAt;
     private List<OrderProduct> orderProductList;

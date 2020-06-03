@@ -8,11 +8,12 @@ import lombok.ToString;
 @Setter
 @ToString
 public class OrderProduct {
-    private String id;
+    private String orderProductId;
     private int quantity;
-    private Product product;
+    private String productId;
+    private Double productPrice;
 
     Double getAmount() {
-        return product.getPrice().doubleValue() * this.getQuantity();
+        return productPrice.doubleValue() * this.getQuantity();
     }
 }

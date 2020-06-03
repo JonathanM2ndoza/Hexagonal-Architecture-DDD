@@ -24,7 +24,7 @@ public class OrderController {
     @PostMapping
     public ResponseEntity<CreateOrderResponse> createProduct(@Valid @RequestBody Order order) throws ParameterNotFoundException, GlobalException {
         createOrderUseCase.createOrder(order);
-        return ResponseEntity.ok().body(CreateOrderResponse.builder().id(order.getId()).build());
+        return ResponseEntity.ok().body(CreateOrderResponse.builder().orderId(order.getOrderId()).build());
     }
 
 }

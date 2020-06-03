@@ -32,7 +32,7 @@ public class OrderRepositoryAdapter implements CreateOrderPort {
 
             callableStatement.execute();
 
-            order.setId(Long.toString(callableStatement.getLong(1)));
+            order.setOrderId(Long.toString(callableStatement.getLong(1)));
         } catch (Exception e) {
             throw new GlobalException("Exception createOrder: " + e.getMessage());
         }
