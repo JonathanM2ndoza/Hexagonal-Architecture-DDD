@@ -1,4 +1,4 @@
-# Products Microservice
+# Orders Microservice
 
 Example of Orders Microservice applying Hexagonal Architecture pattern, Domain Driven Design (DDD) and SOLID principles.
 
