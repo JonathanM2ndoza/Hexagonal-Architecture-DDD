@@ -8,33 +8,47 @@ This example was implemented with Spring Boot, PostgreSQL. The microservices and
 
 1. Start a PostgreSQL server instance with Docker Hub
 
+```shell
 jmendoza@jmendoza-ThinkPad-T420:~$ docker run -d --name postgres -e POSTGRES_PASSWORD=root.jmtizure.k201 postgres
+```
+
+![Screenshot](prtsc/Order-5.png)
 
 2. Create a new Customer database
+
+![Screenshot](prtsc/Order-6.png)
+
+*Note: I am using pgAdmin 4 (Container), is a GUI client for PostgreSQL*
 
 3. Execute the following scripts in the public schema.
 
 ![Screenshot](prtsc/Order-4.png)
- 
 
 ## Configure your application.properties
 
-![Screenshot](prtsc/Product-2.png)
+Find the IP address of your postgres container
 
-## Create Products
+```shell
+jmendoza@jmendoza-ThinkPad-T420:~$ docker inspect postgres
+```
+
+![Screenshot](prtsc/Order-8.png)
+
+![Screenshot](prtsc/Order-7.png)
+
+## Create Order
 
 **Postman**
 
-![Screenshot](prtsc/Product-3.png)
+![Screenshot](prtsc/Order-1.png)
 
-![Screenshot](prtsc/Product-3.1.png)
+**PostgreSQL**
 
+![Screenshot](prtsc/Order-2.png)
 
-**MongoDB Atlas**
+![Screenshot](prtsc/Order-3.png)
 
-![Screenshot](prtsc/Product-3.2.png)
-
-## Get Products
+## Get Orders
 
 **Postman**
 
