@@ -1,5 +1,6 @@
 package com.jmendoza.swa.hexagonal.order.infrastracture.databases.postgresql;
 
+import com.google.gson.Gson;
 import com.jmendoza.swa.hexagonal.order.common.exception.GlobalException;
 import com.jmendoza.swa.hexagonal.order.domain.model.Order;
 import com.jmendoza.swa.hexagonal.order.domain.ports.outbound.CreateOrderPort;
@@ -20,15 +21,19 @@ public class OrderRepositoryAdapter implements CreateOrderPort {
     @Override
     public void createOrder(Order order) throws GlobalException {
 
-        final String procedureCall = "{ ? = call create_order(?, ?, ?)}";
+        final String procedureCall = "{ ? = call create_order(?, ?, ?, ?)}";
 
         try (Connection connection = jdbcTemplate.getDataSource().getConnection();
              CallableStatement callableStatement = connection.prepareCall(procedureCall)
         ) {
+            Gson gson = new Gson();
+            String json = gson.toJson(order.getOrderProductList());
+
             callableStatement.registerOutParameter(1, Types.BIGINT);
             callableStatement.setString(2, order.getCustomerId());
             callableStatement.setTimestamp(3, new java.sql.Timestamp(order.getCreatedAt().getTime()));
             callableStatement.setDouble(4, order.getAmountOrder());
+            callableStatement.setString(5, json);
 
             callableStatement.execute();
 
