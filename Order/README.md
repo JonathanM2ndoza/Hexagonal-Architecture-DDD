@@ -21,7 +21,7 @@ jmendoza@jmendoza-ThinkPad-T420:~$ docker run --name pgadmin4 -p 5050:80 -e "PGA
 
 ![Screenshot](prtsc/Order-5.png)
 
-3. Create a new Customer database
+3. Create a new "customers" database
 
 ![Screenshot](prtsc/Order-6.png)
 
