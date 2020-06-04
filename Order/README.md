@@ -14,7 +14,7 @@ jmendoza@jmendoza-ThinkPad-T420:~$ docker run -d --name postgres -e POSTGRES_PAS
 
 3. Execute the following scripts in the public schema.
 
-![Screenshot](prtsc/Order-4png)
+![Screenshot](prtsc/Order-4.png)
  
 
 ## Configure your application.properties
