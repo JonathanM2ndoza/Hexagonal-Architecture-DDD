@@ -12,6 +12,8 @@ This example was implemented with Spring Boot, PostgreSQL. The microservices and
 jmendoza@jmendoza-ThinkPad-T420:~$ docker run -d --name postgres -e POSTGRES_PASSWORD=root.jmtizure.k201 postgres
 ```
 
+![Screenshot](prtsc/Order-9.png)
+
 ![Screenshot](prtsc/Order-5.png)
 
 2. Create a new Customer database
