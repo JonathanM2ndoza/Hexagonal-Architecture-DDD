@@ -47,6 +47,11 @@ jmendoza@jmendoza-ThinkPad-T420:~$ docker inspect postgres
 
 ![Screenshot](prtsc/Order-1.png)
 
+```shell
+[2020-06-03 22:35:27.350] [TRACE] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [zalando.logbook.Logbook] | {"origin":"remote","type":"request","correlation":"ab783ac9bce46b82","protocol":"HTTP/1.1","remote":"0:0:0:0:0:0:0:1","method":"POST","uri":"http://localhost:3002/v1/orders","headers":{"accept":["*/*"],"accept-encoding":["gzip, deflate, br"],"accept-language":["es-419,es-US;q=0.9,es;q=0.8,en-US;q=0.7,en;q=0.6"],"cache-control":["no-cache"],"connection":["keep-alive"],"content-length":["304"],"content-type":["application/json"],"host":["localhost:3002"],"origin":["chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop"],"postman-token":["32678e26-1a2d-450e-865d-5ea8429540ac"],"sec-fetch-dest":["empty"],"sec-fetch-mode":["cors"],"sec-fetch-site":["none"],"user-agent":["Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"]},"body":{"customerId":"5ed047dda2923f1ac2c64463","createdAt":"2020-06-03T22:34:12","orderProductList":[{"quantity":"2","productId":"5ed31ddb669529409edc2fd0","productPrice":1099.51},{"quantity":"1","productId":"5ed31cb5669529409edc2fcf","productPrice":2199.99}]}}
+[2020-06-03 22:35:27.513] [TRACE] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [zalando.logbook.Logbook] | {"origin":"local","type":"response","correlation":"ab783ac9bce46b82","duration":255,"protocol":"HTTP/1.1","status":200,"headers":{"Connection":["keep-alive"],"Content-Type":["application/json"],"Date":["Thu, 04 Jun 2020 02:35:27 GMT"],"Keep-Alive":["timeout=60"],"Transfer-Encoding":["chunked"]},"body":{"orderId":"31"}}
+```
+
 **PostgreSQL**
 
 ![Screenshot](prtsc/Order-2.png)
