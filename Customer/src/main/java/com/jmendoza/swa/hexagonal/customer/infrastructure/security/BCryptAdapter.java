@@ -1,4 +1,4 @@
-package com.jmendoza.swa.hexagonal.customer.infrastracture.security;
+package com.jmendoza.swa.hexagonal.customer.infrastructure.security;
 
 import com.jmendoza.swa.hexagonal.customer.domain.ports.outbound.PasswordEncodePort;
 import com.jmendoza.swa.hexagonal.customer.domain.ports.outbound.PasswordMatchesPort;
