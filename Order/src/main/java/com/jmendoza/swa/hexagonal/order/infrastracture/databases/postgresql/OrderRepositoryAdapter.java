@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import com.jmendoza.swa.hexagonal.order.common.exception.GlobalException;
 import com.jmendoza.swa.hexagonal.order.domain.model.Order;
 import com.jmendoza.swa.hexagonal.order.domain.ports.outbound.CreateOrderPort;
+import com.jmendoza.swa.hexagonal.order.domain.ports.outbound.GetOrderPort;
+import org.postgresql.util.PGobject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -13,7 +15,7 @@ import java.sql.Connection;
 import java.sql.Types;
 
 @Repository
-public class OrderRepositoryAdapter implements CreateOrderPort {
+public class OrderRepositoryAdapter implements CreateOrderPort, GetOrderPort {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
@@ -41,5 +43,32 @@ public class OrderRepositoryAdapter implements CreateOrderPort {
         } catch (Exception e) {
             throw new GlobalException("Exception createOrder: " + e.getMessage());
         }
+    }
+
+    @Override
+    public Order getOrder(String orderId) throws GlobalException {
+
+        final String procedureCall = "{ ? = call get_order(?)}";
+        Order order = null;
+
+        try (Connection connection = jdbcTemplate.getDataSource().getConnection();
+             CallableStatement callableStatement = connection.prepareCall(procedureCall)
+        ) {
+            PGobject pGobject;
+
+            callableStatement.registerOutParameter(1, Types.OTHER);
+            callableStatement.setLong(2, Long.parseLong(orderId));
+            callableStatement.execute();
+
+            pGobject = (PGobject) callableStatement.getObject(1);
+            if (pGobject != null) {
+                Gson gson = new Gson();
+                order = gson.fromJson(pGobject.toString(), Order.class);
+            }
+
+        } catch (Exception e) {
+            throw new GlobalException("Exception getOrder: " + e.getMessage());
+        }
+        return order;
     }
 }
