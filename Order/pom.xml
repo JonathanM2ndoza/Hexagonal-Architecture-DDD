@@ -8,10 +8,12 @@
         <version>2.3.0.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.jmendoza.swa.hexagonal</groupId>
     <artifactId>order</artifactId>
     <version>1.0</version>
-    <name>order</name>
+    <name>hexagonal-architecture-order</name>
+    <packaging>pom</packaging>
     <description>Example of Hexagonal Architecture - Orders</description>
 
     <properties>

@@ -1,4 +1,4 @@
-package com.jmendoza.swa.hexagonal.product.infrastracture.databases.mongo;
+package com.jmendoza.swa.hexagonal.product.infrastructure.databases.mongo;
 
 import com.jmendoza.swa.hexagonal.product.domain.model.Product;
 import com.jmendoza.swa.hexagonal.product.domain.ports.outbound.*;
