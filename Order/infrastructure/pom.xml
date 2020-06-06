@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.jmendoza.swa.hexagonal</groupId>
+        <artifactId>order</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <artifactId>infrastructure</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+    <name>hexagonal-architecture-infrastructure</name>
+    <description>Example of Hexagonal Architecture - Infrastructure</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.jmendoza.swa.hexagonal</groupId>
+            <artifactId>domain</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

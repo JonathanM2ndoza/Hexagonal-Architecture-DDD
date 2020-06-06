@@ -1,0 +1,16 @@
+[2020-06-05 23:59:49.755] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] | Starting HexagonalArchitectureConfigurationApplication on jmendoza-ThinkPad-T420 with PID 12245 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/configuration/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order)
+[2020-06-05 23:59:49.773] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] | No active profile set, falling back to default profiles: default
+[2020-06-05 23:59:50.885] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-06-05 23:59:50.905] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 16ms. Found 0 JDBC repository interfaces.
+[2020-06-05 23:59:51.469] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-06-05 23:59:51.479] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-06-05 23:59:51.480] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-06-05 23:59:51.481] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-06-05 23:59:51.592] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-06-05 23:59:51.593] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1550 ms
+[2020-06-05 23:59:51.938] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-06-05 23:59:52.237] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-06-05 23:59:52.439] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-06-05 23:59:52.615] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-06-05 23:59:52.692] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
+[2020-06-05 23:59:52.712] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] | Started HexagonalArchitectureConfigurationApplication in 3.799 seconds (JVM running for 5.472)
