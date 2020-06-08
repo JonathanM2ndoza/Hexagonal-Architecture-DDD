@@ -62,6 +62,6 @@ Note: The words Application, Domain and Infrastructure do not come from the orig
 
 ![Screenshot](prtsc/Hexagonal-Architecture-Microservices.jpg)
 
-In our example we will use the basic architecture above without using API Gateway. The main objective is to highlight the use of Hexagonal Architecture in the microservices code. 
+In our example we will use the basic architecture above without using API Gateway. Customer, Product, Order do not necessarily have to be in different databases, it depends on the bounded context. The main objective is to highlight the use of Hexagonal Architecture in the microservices code. 
 
 All microservices are implemented with Spring Boot, however microservices can be implemented with different technologies.
