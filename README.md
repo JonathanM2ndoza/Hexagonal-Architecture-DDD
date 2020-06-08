@@ -64,4 +64,4 @@ Note: The words Application, Domain and Infrastructure do not come from the orig
 
 In our example we will use the basic architecture above without using API Gateway. The main objective is to highlight the use of Hexagonal Architecture in the microservices code. 
 
-All microservices are implemented with Spring Boot, however microservices and DB can be implemented with different technologies.
+All microservices are implemented with Spring Boot, however microservices can be implemented with different technologies.
