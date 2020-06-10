@@ -1,6 +1,6 @@
 # Orders Microservice
 
-Example of Orders Microservice applying Hexagonal Architecture pattern, Domain Driven Design (DDD) and SOLID principles.
+Example of Orders Microservice applying Hexagonal Architecture pattern, Domain Driven Design (DDD) and SOLID principles. I recommend using this Multiple Modules structure to decouple the code. In this way, part of the code can be migrated to another project in the future.
 
 This example was implemented with Spring Boot, PostgreSQL. The microservices and the DB are deployed locally.
 
