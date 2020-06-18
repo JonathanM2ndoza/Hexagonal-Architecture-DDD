@@ -17,10 +17,15 @@ public class GetOrderService implements GetOrderUseCase {
 
     @Override
     public Order getOrder(String orderId) throws ResourceNotFoundException, GlobalException {
-        final Order order = getOrderPort.getOrder(orderId);
-        if (order == null)
-            throw new ResourceNotFoundException(OrderConstanst.ORDER_NOT_FOUND + orderId);
+        try {
+            final Order order = getOrderPort.getOrder(orderId);
+            if (order == null)
+                throw new ResourceNotFoundException(OrderConstanst.ORDER_NOT_FOUND + orderId);
 
-        return order;
+            return order;
+        } catch (Exception e) {
+            throw new GlobalException("getOrder: " + e.getMessage());
+        }
+
     }
 }

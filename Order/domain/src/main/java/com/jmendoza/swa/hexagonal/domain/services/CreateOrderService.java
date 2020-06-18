@@ -18,17 +18,20 @@ public class CreateOrderService implements CreateOrderUseCase {
 
     @Override
     public void createOrder(Order order) throws ParameterNotFoundException, GlobalException {
+        try {
+            if (StringUtils.isBlank(order.getCustomerId()))
+                getMessageParameterNotFoundException("customerId");
+            if (order.getCreatedAt() == null)
+                getMessageParameterNotFoundException("createdAt");
+            if (order.getOrderProductList() == null || order.getOrderProductList().isEmpty())
+                getMessageParameterNotFoundException("orderProductList");
 
-        if (StringUtils.isBlank(order.getCustomerId()))
-            getMessageParameterNotFoundException("customerId");
-        if (order.getCreatedAt() == null)
-            getMessageParameterNotFoundException("createdAt");
-        if (order.getOrderProductList() == null || order.getOrderProductList().isEmpty())
-            getMessageParameterNotFoundException("orderProductList");
+            //TODO: pending validate orderProductList
 
-        //TODO: pending validate orderProductList
-
-        createOrderPort.createOrder(order);
+            createOrderPort.createOrder(order);
+        } catch (Exception e) {
+            throw new GlobalException("createOrder: " + e.getMessage());
+        }
     }
 
     private void getMessageParameterNotFoundException(String parameter) throws ParameterNotFoundException {
