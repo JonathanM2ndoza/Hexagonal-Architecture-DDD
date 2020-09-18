@@ -1,6 +1,8 @@
 # Hexagonal-Architecture-DDD
 
-Example of how to use Hexagonal Architecture with Microservices, S.O.L.I.D Principles and the basic of Domain Driven Design (DDD) 
+Ports and Adapters or also known as Hexagonal Architecture, is a popular architecture invented by Alistair Cockburn in 2005.
+
+Example of how to use Hexagonal Architecture and the basic of Domain Driven Design (DDD) 
 
 This example is made with Spring Boot, MongoDB, PostgreSQL
 
