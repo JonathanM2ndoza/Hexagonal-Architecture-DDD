@@ -1,4 +1,4 @@
-package com.jmendoza.swa.hexagonal.customer.application.rest;
+package com.jmendoza.swa.hexagonal.customer.application.rest.controller;
 
 import com.jmendoza.swa.hexagonal.customer.application.rest.response.CreateCustomerResponse;
 import com.jmendoza.swa.hexagonal.customer.application.rest.response.CustomerLoginResponse;
