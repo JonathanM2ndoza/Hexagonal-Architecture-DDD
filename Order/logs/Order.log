@@ -1,38 +1,170 @@
-[2020-06-16 20:02:12.114] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] | Starting HexagonalArchitectureConfigurationApplication on jmendoza-ThinkPad-T420 with PID 27733 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/configuration/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order)
-[2020-06-16 20:02:12.150] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] | No active profile set, falling back to default profiles: default
-[2020-06-16 20:02:13.891] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-[2020-06-16 20:02:13.919] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 21ms. Found 0 JDBC repository interfaces.
-[2020-06-16 20:02:15.051] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
-[2020-06-16 20:02:15.073] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
-[2020-06-16 20:02:15.074] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
-[2020-06-16 20:02:15.075] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
-[2020-06-16 20:02:15.230] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
-[2020-06-16 20:02:15.231] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 2708 ms
-[2020-06-16 20:02:16.322] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
-[2020-06-16 20:02:16.778] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
-[2020-06-16 20:02:17.447] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
-[2020-06-16 20:02:17.870] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
-[2020-06-16 20:02:18.083] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
-[2020-06-16 20:02:18.153] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] | Started HexagonalArchitectureConfigurationApplication in 7.14 seconds (JVM running for 8.959)
-[2020-06-16 20:03:38.065] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
-[2020-06-16 20:03:38.066] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
-[2020-06-16 20:03:38.086] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
-[2020-06-16 20:06:28.542] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] | Starting HexagonalArchitectureConfigurationApplication on jmendoza-ThinkPad-T420 with PID 28160 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/configuration/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order)
-[2020-06-16 20:06:28.580] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] | No active profile set, falling back to default profiles: default
-[2020-06-16 20:06:29.436] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-[2020-06-16 20:06:29.458] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 17ms. Found 0 JDBC repository interfaces.
-[2020-06-16 20:06:29.963] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
-[2020-06-16 20:06:29.972] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
-[2020-06-16 20:06:29.973] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
-[2020-06-16 20:06:29.973] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
-[2020-06-16 20:06:30.043] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
-[2020-06-16 20:06:30.044] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 1278 ms
-[2020-06-16 20:06:30.405] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
-[2020-06-16 20:06:30.628] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
-[2020-06-16 20:06:30.826] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
-[2020-06-16 20:06:30.935] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
-[2020-06-16 20:06:30.960] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
-[2020-06-16 20:06:30.979] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] | Started HexagonalArchitectureConfigurationApplication in 3.27 seconds (JVM running for 4.622)
-[2020-06-16 20:06:36.700] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
-[2020-06-16 20:06:36.701] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
-[2020-06-16 20:06:36.717] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-09-18 18:46:56.843] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] | Starting HexagonalArchitectureConfigurationApplication on jmendoza-ThinkPad-T420 with PID 31880 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/configuration/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order)
+[2020-09-18 18:46:57.023] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] | No active profile set, falling back to default profiles: default
+[2020-09-18 18:46:58.392] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-09-18 18:46:58.425] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 26ms. Found 0 JDBC repository interfaces.
+[2020-09-18 18:46:59.341] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-09-18 18:46:59.366] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-09-18 18:46:59.367] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-09-18 18:46:59.368] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-09-18 18:46:59.564] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-09-18 18:46:59.565] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 2475 ms
+[2020-09-18 18:46:59.889] [WARN] [jmendoza-ThinkPad-T420] [main] [servlet.context.AnnotationConfigServletWebServerApplicationContext] | Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/application/target/classes/com/jmendoza/swa/hexagonal/application/rest/controller/OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'createOrderService' defined in file [/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/domain/target/classes/com/jmendoza/swa/hexagonal/domain/services/CreateOrderService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.jmendoza.swa.hexagonal.domain.ports.outbound.CreateOrderPort' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[2020-09-18 18:46:59.895] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Stopping service [Tomcat]
+[2020-09-18 18:46:59.929] [INFO] [jmendoza-ThinkPad-T420] [main] [autoconfigure.logging.ConditionEvaluationReportLoggingListener] | 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2020-09-18 18:47:00.165] [ERROR] [jmendoza-ThinkPad-T420] [main] [boot.diagnostics.LoggingFailureAnalysisReporter] | 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.jmendoza.swa.hexagonal.domain.services.CreateOrderService required a bean of type 'com.jmendoza.swa.hexagonal.domain.ports.outbound.CreateOrderPort' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.jmendoza.swa.hexagonal.domain.ports.outbound.CreateOrderPort' in your configuration.
+
+[2020-09-18 18:47:00.168] [WARN] [jmendoza-ThinkPad-T420] [main] [springframework.boot.SpringApplication] | Unable to close ApplicationContext
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at com.jmendoza.swa.hexagonal.configuration.HexagonalArchitectureConfigurationApplication.main(HexagonalArchitectureConfigurationApplication.java:10) [classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:94) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 28 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:94) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 28 more
+[2020-09-18 18:48:24.419] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] | Starting HexagonalArchitectureConfigurationApplication on jmendoza-ThinkPad-T420 with PID 32302 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/configuration/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order)
+[2020-09-18 18:48:24.437] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] | No active profile set, falling back to default profiles: default
+[2020-09-18 18:48:25.832] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-09-18 18:48:25.859] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] | Finished Spring Data repository scanning in 21ms. Found 0 JDBC repository interfaces.
+[2020-09-18 18:48:26.638] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat initialized with port(s): 3002 (http)
+[2020-09-18 18:48:26.652] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Initializing ProtocolHandler ["http-nio-3002"]
+[2020-09-18 18:48:26.653] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] | Starting service [Tomcat]
+[2020-09-18 18:48:26.669] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] | Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-09-18 18:48:26.773] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] | Initializing Spring embedded WebApplicationContext
+[2020-09-18 18:48:26.774] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] | Root WebApplicationContext: initialization completed in 2003 ms
+[2020-09-18 18:48:27.296] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] | Initializing ExecutorService 'applicationTaskExecutor'
+[2020-09-18 18:48:27.655] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Starting...
+[2020-09-18 18:48:27.963] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Start completed.
+[2020-09-18 18:48:28.195] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] | Starting ProtocolHandler ["http-nio-3002"]
+[2020-09-18 18:48:28.279] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] | Tomcat started on port(s): 3002 (http) with context path ''
+[2020-09-18 18:48:28.293] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] | Started HexagonalArchitectureConfigurationApplication in 4.93 seconds (JVM running for 6.902)
+[2020-09-18 18:53:33.328] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-09-18 18:53:33.330] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown initiated...
+[2020-09-18 18:53:33.343] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] | HikariPool-1 - Shutdown completed.
+[2020-09-18 18:53:59.925] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] ===> Starting HexagonalArchitectureConfigurationApplication on jmendoza-ThinkPad-T420 with PID 32731 (/home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order/configuration/target/classes started by jmendoza in /home/jmendoza/IdeaProjects/JonathanM2ndoza/Hexagonal-Architecture-DDD/Order)
+[2020-09-18 18:53:59.973] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] ===> No active profile set, falling back to default profiles: default
+[2020-09-18 18:54:01.235] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] ===> Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[2020-09-18 18:54:01.262] [INFO] [jmendoza-ThinkPad-T420] [main] [repository.config.RepositoryConfigurationDelegate] ===> Finished Spring Data repository scanning in 22ms. Found 0 JDBC repository interfaces.
+[2020-09-18 18:54:02.009] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] ===> Tomcat initialized with port(s): 3002 (http)
+[2020-09-18 18:54:02.022] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] ===> Initializing ProtocolHandler ["http-nio-3002"]
+[2020-09-18 18:54:02.023] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardService] ===> Starting service [Tomcat]
+[2020-09-18 18:54:02.023] [INFO] [jmendoza-ThinkPad-T420] [main] [catalina.core.StandardEngine] ===> Starting Servlet engine: [Apache Tomcat/9.0.35]
+[2020-09-18 18:54:02.115] [INFO] [jmendoza-ThinkPad-T420] [main] [[Tomcat].[localhost].[/]] ===> Initializing Spring embedded WebApplicationContext
+[2020-09-18 18:54:02.115] [INFO] [jmendoza-ThinkPad-T420] [main] [web.context.ContextLoader] ===> Root WebApplicationContext: initialization completed in 1863 ms
+[2020-09-18 18:54:02.541] [INFO] [jmendoza-ThinkPad-T420] [main] [scheduling.concurrent.ThreadPoolTaskExecutor] ===> Initializing ExecutorService 'applicationTaskExecutor'
+[2020-09-18 18:54:02.780] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] ===> HikariPool-1 - Starting...
+[2020-09-18 18:54:02.994] [INFO] [jmendoza-ThinkPad-T420] [main] [zaxxer.hikari.HikariDataSource] ===> HikariPool-1 - Start completed.
+[2020-09-18 18:54:03.139] [INFO] [jmendoza-ThinkPad-T420] [main] [coyote.http11.Http11NioProtocol] ===> Starting ProtocolHandler ["http-nio-3002"]
+[2020-09-18 18:54:03.174] [INFO] [jmendoza-ThinkPad-T420] [main] [embedded.tomcat.TomcatWebServer] ===> Tomcat started on port(s): 3002 (http) with context path ''
+[2020-09-18 18:54:03.189] [INFO] [jmendoza-ThinkPad-T420] [main] [hexagonal.configuration.HexagonalArchitectureConfigurationApplication] ===> Started HexagonalArchitectureConfigurationApplication in 3.973 seconds (JVM running for 5.737)
+[2020-09-18 18:55:19.058] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [[Tomcat].[localhost].[/]] ===> Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-09-18 18:55:19.059] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] ===> Initializing Servlet 'dispatcherServlet'
+[2020-09-18 18:55:19.109] [INFO] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [web.servlet.DispatcherServlet] ===> Completed initialization in 49 ms
+[2020-09-18 18:55:19.415] [TRACE] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [zalando.logbook.Logbook] ===> {"origin":"remote","type":"request","correlation":"e7f998e53c885f2d","protocol":"HTTP/1.1","remote":"0:0:0:0:0:0:0:1","method":"POST","uri":"http://localhost:3002/v1/orders","headers":{"accept":["*/*"],"accept-encoding":["gzip, deflate, br"],"accept-language":["es-419,es-US;q=0.9,es;q=0.8,en-US;q=0.7,en;q=0.6"],"cache-control":["no-cache"],"connection":["keep-alive"],"content-length":["304"],"content-type":["application/json"],"host":["localhost:3002"],"origin":["chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop"],"postman-token":["ac8ea573-8463-712c-1cd5-8c575789dbc3"],"sec-fetch-dest":["empty"],"sec-fetch-mode":["cors"],"sec-fetch-site":["none"],"user-agent":["Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"]},"body":{"customerId":"5ed047dda2923f1ac2c64463","createdAt":"2020-09-18T00:10:12","orderProductList":[{"quantity":"2","productId":"5ed31ddb669529409edc2fd0","productPrice":1099.51},{"quantity":"1","productId":"5ed31cb5669529409edc2fcf","productPrice":2199.99}]}}
+[2020-09-18 18:55:19.876] [TRACE] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-1] [zalando.logbook.Logbook] ===> {"origin":"local","type":"response","correlation":"e7f998e53c885f2d","duration":682,"protocol":"HTTP/1.1","status":200,"headers":{"Connection":["keep-alive"],"Content-Type":["application/json"],"Date":["Fri, 18 Sep 2020 22:55:19 GMT"],"Keep-Alive":["timeout=60"],"Transfer-Encoding":["chunked"]},"body":{"orderId":"36"}}
+[2020-09-18 18:55:43.478] [TRACE] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-2] [zalando.logbook.Logbook] ===> {"origin":"remote","type":"request","correlation":"90a2cd79829db3ea","protocol":"HTTP/1.1","remote":"0:0:0:0:0:0:0:1","method":"GET","uri":"http://localhost:3002/v1/orders/36","headers":{"accept":["*/*"],"accept-encoding":["gzip, deflate, br"],"accept-language":["es-419,es-US;q=0.9,es;q=0.8,en-US;q=0.7,en;q=0.6"],"cache-control":["no-cache"],"connection":["keep-alive"],"host":["localhost:3002"],"postman-token":["31da7306-62b6-22f8-37e0-2a251f892506"],"sec-fetch-dest":["empty"],"sec-fetch-mode":["cors"],"sec-fetch-site":["none"],"user-agent":["Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"]}}
+[2020-09-18 18:55:43.526] [TRACE] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-2] [zalando.logbook.Logbook] ===> {"origin":"local","type":"response","correlation":"90a2cd79829db3ea","duration":48,"protocol":"HTTP/1.1","status":200,"headers":{"Connection":["keep-alive"],"Content-Type":["application/json"],"Date":["Fri, 18 Sep 2020 22:55:43 GMT"],"Keep-Alive":["timeout=60"],"Transfer-Encoding":["chunked"]},"body":{"orderId":"36","customerId":"5ed047dda2923f1ac2c64463","createdAt":"2020-09-18T00:10:12.000+00:00","orderProductList":[{"orderProductId":19,"quantity":2,"productId":"5ed31ddb669529409edc2fd0","productPrice":1099.51},{"orderProductId":20,"quantity":1,"productId":"5ed31cb5669529409edc2fcf","productPrice":2199.99}],"amountOrder":4399.01}}
+[2020-09-18 18:55:49.901] [TRACE] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-3] [zalando.logbook.Logbook] ===> {"origin":"remote","type":"request","correlation":"9e2e64d736239f87","protocol":"HTTP/1.1","remote":"0:0:0:0:0:0:0:1","method":"GET","uri":"http://localhost:3002/v1/orders/37","headers":{"accept":["*/*"],"accept-encoding":["gzip, deflate, br"],"accept-language":["es-419,es-US;q=0.9,es;q=0.8,en-US;q=0.7,en;q=0.6"],"cache-control":["no-cache"],"connection":["keep-alive"],"host":["localhost:3002"],"postman-token":["f9b7108d-6dd7-a3a8-acf5-57fed7be75f8"],"sec-fetch-dest":["empty"],"sec-fetch-mode":["cors"],"sec-fetch-site":["none"],"user-agent":["Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"]}}
+[2020-09-18 18:55:49.924] [ERROR] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-3] [common.exception.CustomExceptionHandler] ===> com.jmendoza.swa.hexagonal.common.exception.GlobalException: getOrder: Order not found :: 37
+[2020-09-18 18:55:49.930] [TRACE] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-3] [zalando.logbook.Logbook] ===> {"origin":"local","type":"response","correlation":"9e2e64d736239f87","duration":30,"protocol":"HTTP/1.1","status":500,"headers":{"Connection":["close"],"Content-Type":["application/json"],"Date":["Fri, 18 Sep 2020 22:55:49 GMT"],"Transfer-Encoding":["chunked"]},"body":{"timestamp":"2020-09-18T22:55:49.924+00:00","message":"getOrder: Order not found :: 37","details":"uri=/v1/orders/37"}}
+[2020-09-18 18:55:57.137] [TRACE] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-4] [zalando.logbook.Logbook] ===> {"origin":"remote","type":"request","correlation":"8646799f85278cc7","protocol":"HTTP/1.1","remote":"0:0:0:0:0:0:0:1","method":"GET","uri":"http://localhost:3002/v1/orders/36","headers":{"accept":["*/*"],"accept-encoding":["gzip, deflate, br"],"accept-language":["es-419,es-US;q=0.9,es;q=0.8,en-US;q=0.7,en;q=0.6"],"cache-control":["no-cache"],"connection":["keep-alive"],"host":["localhost:3002"],"postman-token":["676e731d-bfde-122b-485a-c0d11ebfca11"],"sec-fetch-dest":["empty"],"sec-fetch-mode":["cors"],"sec-fetch-site":["none"],"user-agent":["Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"]}}
+[2020-09-18 18:55:57.145] [TRACE] [jmendoza-ThinkPad-T420] [http-nio-3002-exec-4] [zalando.logbook.Logbook] ===> {"origin":"local","type":"response","correlation":"8646799f85278cc7","duration":9,"protocol":"HTTP/1.1","status":200,"headers":{"Connection":["keep-alive"],"Content-Type":["application/json"],"Date":["Fri, 18 Sep 2020 22:55:57 GMT"],"Keep-Alive":["timeout=60"],"Transfer-Encoding":["chunked"]},"body":{"orderId":"36","customerId":"5ed047dda2923f1ac2c64463","createdAt":"2020-09-18T00:10:12.000+00:00","orderProductList":[{"orderProductId":19,"quantity":2,"productId":"5ed31ddb669529409edc2fd0","productPrice":1099.51},{"orderProductId":20,"quantity":1,"productId":"5ed31cb5669529409edc2fcf","productPrice":2199.99}],"amountOrder":4399.01}}
+[2020-09-18 18:57:04.151] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [scheduling.concurrent.ThreadPoolTaskExecutor] ===> Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-09-18 18:57:04.153] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] ===> HikariPool-1 - Shutdown initiated...
+[2020-09-18 18:57:04.179] [INFO] [jmendoza-ThinkPad-T420] [SpringContextShutdownHook] [zaxxer.hikari.HikariDataSource] ===> HikariPool-1 - Shutdown completed.
