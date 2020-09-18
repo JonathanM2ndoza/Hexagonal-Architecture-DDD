@@ -1,4 +1,4 @@
-package com.jmendoza.swa.hexagonal.product.application.rest;
+package com.jmendoza.swa.hexagonal.product.application.rest.controller;
 
 import com.jmendoza.swa.hexagonal.product.application.rest.response.CreateProductResponse;
 import com.jmendoza.swa.hexagonal.product.common.exception.GlobalException;
