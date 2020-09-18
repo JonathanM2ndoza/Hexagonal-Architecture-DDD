@@ -8,7 +8,7 @@
 <Configuration status="WARN" monitorInterval="30">
     <Properties>
         <Property name="LOG_PATTERN">
-            [%d{yyyy-MM-dd HH:mm:ss.SSS}] [%p] [${hostName}] [%t] [%c{3}] | %m%n
+            [%d{yyyy-MM-dd HH:mm:ss.SSS}] [%p] [${hostName}] [%t] [%c{3}] ==> %m%n
         </Property>
     </Properties>
     <Appenders>
